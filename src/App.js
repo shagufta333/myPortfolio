@@ -1,10 +1,15 @@
 import React from 'react'
+import Hello from './Hello';
+import Header from './Header';
+import Footer from './Footer';
 
 export const App = () => {
   return (
-    <div>
-      hello world
-    </div>
+    <>
+      <Header/>
+      <Hello/>
+      <Footer/>
+    </>
   );
 };
 
