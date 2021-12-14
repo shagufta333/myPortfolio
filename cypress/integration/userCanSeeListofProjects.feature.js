@@ -1,12 +1,12 @@
 describe("User can see list of Projects", () => {
   beforeEach(() => {
-    cy.visit("http//localhost:3000");
+    cy.visit("http://localhost:3000");
     cy.get("#projects-tab").click();
   });
   it("diplays the first project", () => {
     cy.get("#project-1").within(() => {
       cy.get(".image").should("exit");
-      cy.get(".header").should("conatain", "My First Website");
+      cy.get(".header").should("contain", "My First Website");
       cy.get(".description").should("contain", "This was my first project.");
     });
   });
@@ -24,7 +24,7 @@ describe("User can see list of Projects", () => {
   it("displays the third project", () => {
     cy.get("#project-3").within(() => {
       cy.get(".image").should("exit");
-      cy.get(".header").should("conatain", "Mobile UX");
+      cy.get(".header").should("contain", "Mobile UX");
       cy.get(".description").should(
         "contain",
         "I like to design for the mobile platform."

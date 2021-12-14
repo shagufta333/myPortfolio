@@ -1,17 +1,16 @@
 import React, { Component } from "react";
 import { Container } from "semantic-ui-react";
+import axios from "axios";
 
 class Projects extends Component {
   state = {
-    projects: [
-      { id: 1, name: "My First Website" },
-      { id: 2, name: "FizzBuzz" },
-    ],
+    projects: [],
+    
   };
   render() {
     const { projects } = this.state;
 
-    let projectsList = projects.map((projects) => {
+    let projectsList = projects.map((project) => {
       return (
         <div id={`project-${project.id}`} key={project.id}>
           <h3>{project.name}</h3>
@@ -25,6 +24,12 @@ class Projects extends Component {
         {projectsList}
       </Container>
     );
+  }
+
+  componentDidMount(){
+    axios.get("./data/projects.json").then((response) =>{
+      this.setState({projects: response.data});
+    });
   }
 }
 
