@@ -1,11 +1,11 @@
 [
-    {
-      "id": 1,
-      "name": "shagufta batool",
-      "email": "shagufta.batool8@gmail.com"
-    },
-    {
-      "id": 2,
-      "prework": "Next plc"
-    }
+  {
+    "id": 1,
+    "name": "shagufta batool",
+    "email": "shagufta.batool8@gmail.com"
+  },
+  {
+    "id": 2,
+    "prework": "Next plc"
+  }
 ]

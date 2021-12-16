@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import { Container, Grid } from 'semantic-ui-react';
-import axios from 'axios';
-import CvCard from './CvCard'
+import React, { Component } from "react";
+import { Container, Grid } from "semantic-ui-react";
+import axios from "axios";
+import CvCard from "./CvCard";
 
 class Cv extends Component {
   state = {
-    cv: []
+    cv: [],
   };
 
   render() {
@@ -14,7 +14,7 @@ class Cv extends Component {
     let cvList = cv.map((cv) => {
       return (
         <div id={`cv-${cv.id}`} key={cv.id}>
-          <CvCard cv = {cv} />
+          <CvCard cv={cv} />
         </div>
       );
     });
@@ -25,13 +25,13 @@ class Cv extends Component {
         <Grid>{cvList}</Grid>
       </Container>
     );
-  };
+  }
 
   componentDidMount() {
     axios.get("./data/cv.json").then((response) => {
       this.setState({ cv: response.data });
     });
-  };
-};
+  }
+}
 
 export default Cv;

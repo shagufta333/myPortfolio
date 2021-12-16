@@ -1,22 +1,20 @@
 [
-{
-"id":1,
-"name":"My First Website",
-"image": "https://images.squarespace-cdn.com/content/5b78a05b8f5130b1bdd622cf/1539777877550-WPKHW4WJJM1V1BCII568/horrible-website-design.jpg?content-type=image%2Fjpeg",
-"description":"This was my first project."
-
-},
-{
-    "id":2,
-    "name":"FizzBuzz",
+  {
+    "id": 1,
+    "name": "My First Website",
+    "image": "https://images.squarespace-cdn.com/content/5b78a05b8f5130b1bdd622cf/1539777877550-WPKHW4WJJM1V1BCII568/horrible-website-design.jpg?content-type=image%2Fjpeg",
+    "description": "This was my first project."
+  },
+  {
+    "id": 2,
+    "name": "FizzBuzz",
     "image": "https://i.ibb.co/B6Tq7VQ/fizz-buzz-ruby.png",
-    "description":"Making ruby backend appliaction is fun."
-},
-{
-"id":3,
-    "name":"Mobile UX",
+    "description": "Making ruby backend appliaction is fun."
+  },
+  {
+    "id": 3,
+    "name": "Mobile UX",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2fBOF_YyvsvheAo8Yv0oR9__fMlKNqZYIA&usqp=CAU",
-    "description":"I like to design for the mobile platform."
-}
-
+    "description": "I like to design for the mobile platform."
+  }
 ]

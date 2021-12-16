@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import { Container, Grid } from "semantic-ui-react";
 import axios from "axios";
-import ProjectCard from './ProjectCard'
+import ProjectCard from "./ProjectCard";
 
 class Projects extends Component {
   state = {
     projects: [],
-    
   };
   render() {
     const { projects } = this.state;
@@ -27,9 +26,9 @@ class Projects extends Component {
     );
   }
 
-  componentDidMount(){
-    axios.get("./data/projects.json").then((response) =>{
-      this.setState({projects: response.data});
+  componentDidMount() {
+    axios.get("./data/projects.json").then((response) => {
+      this.setState({ projects: response.data });
     });
   }
 }

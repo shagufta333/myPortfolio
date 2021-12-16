@@ -10,12 +10,12 @@ import { Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <>
-       <Header/>
-      <Routes> 
-        <Route exact path="/" element={<Hello/>}/>
-        <Route exact path="/about" element={<About/>}/>
-        <Route exact path="/projects" element={<Projects/>}/>
-        <Route path="/cv" element={<Cv />}/>
+      <Header />
+      <Routes>
+        <Route exact path="/" element={<Hello />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/projects" element={<Projects />} />
+        <Route path="/cv" element={<Cv />} />
       </Routes>
       <Footer />
     </>
